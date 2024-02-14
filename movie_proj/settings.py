@@ -81,16 +81,7 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'stage_skinepic',
-#         'USER': '',
-#         'PASSWORD': 'WYihqJa8TNdCnH4  ',
-#         'HOST': '*',
-#         'PORT': '5432'
-#     }
-# }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
