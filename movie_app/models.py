@@ -1,17 +1,15 @@
 from django.db import models
 
 
-# import sqlalchemy
-# from sqlalchemy.ext.declarative import declarative_base
-#
+# commands
+# manage.py shell_plus --print-sql
+# from movie_app.models import Movie
+
 class Movie(models.Model):
     name = models.CharField(max_length=40)
     rating = models.IntegerField()
+    year = models.IntegerField(null=True)
+    budget = models.IntegerField(default=1000000)
 
-# from sqlalchemy.orm import relationship, sessionmaker
-# Base = declarative_base()
-# engine = sqlalchemy.create_engine('postgresql://stepan:gKZjcUH5yD4duw2@158.160.63.83:5432/stage_skinepic', echo=True)
-# Session = sessionmaker(bind=engine)
-# session = Session()
-#
-# conn = engine.connect()
+    def __str__(self):
+        return f'{self.name} - {self.rating}%'
